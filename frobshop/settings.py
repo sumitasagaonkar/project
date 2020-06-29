@@ -26,7 +26,7 @@ SECRET_KEY = '747gcy%nk@!x)25c_8w7vezus+mm_eppmy-u(6+g3v4uj+-3j%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 OSCAR_USE_LESS = True
-#ALLOWED_HOSTS = ['165.22.214.187', 'onlinejath.com']
+ALLOWED_HOSTS = ['165.22.214.187', 'onlinejath.com']
 
 OSCAR_DEFAULT_CURRENCY = 'INR'
 # Application definition
