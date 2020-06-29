@@ -26,7 +26,7 @@ SECRET_KEY = '747gcy%nk@!x)25c_8w7vezus+mm_eppmy-u(6+g3v4uj+-3j%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 OSCAR_USE_LESS = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['165.22.214.187']
 
 OSCAR_DEFAULT_CURRENCY = 'INR'
 # Application definition
@@ -163,13 +163,12 @@ OSCAR_ORDER_STATUS_PIPELINE = {
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db.sqlite3',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'projectjath',
+        'USER': 'jath',
+        'PASSWORD': 'asagaonkar',
+        'HOST': 'localhost',
         'PORT': '',
-        'ATOMIC_REQUESTS': True,
     }
 }
 
