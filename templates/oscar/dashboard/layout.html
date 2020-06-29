@@ -7,12 +7,7 @@
 
 {% block styles %}
 <link rel="stylesheet" type="text/css" href="{% static 'polls/css/dashwww.css' %}">
-    {% if use_less %}
-        <link rel="stylesheet/less" type="text/css" href="{% static "oscar/less/dashboard.less" %}" />
-    {% else %}
-    <link rel="stylesheet" type="text/css" href="{% static 'polls/css/dashwww.css' %}">
-        <link rel="stylesheet" type="text/css" href="{% static "oscar/css/dashboard.css" %}" />
-    {% endif %}
+  
 {% endblock %}
 
 {% block extrastyles %}
@@ -24,7 +19,7 @@
 {% endblock %}
 
 {% block title %}
-    {% trans "Dashboard" %} | {{ block.super }}
+    {% trans "Dashboard" %} | 
 {% endblock %}
 
 {% block layout %}
@@ -37,11 +32,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <span class="navbar-brand">{{ shop_name }}</span>
+                
+                <li><a href="{{ homepage_url }}"></i><h1>{% trans "ik industries " %}</h1></a></li>
             </div>
             <div class="collapse navbar-collapse nav-accounts">
                 <ul class="nav navbar-nav navbar-right">
                     <li><span>{% trans "Welcome" %} <em>{{ user.get_full_name|default:request.user.email }}</em></span></li>
+                    <li><a href="{{ homepage_url }}"><i class="icon-home"></i> {% trans "Sumit Sunil Asagaonkar" %}</a></li>
                     <li><a href="{{ homepage_url }}"><i class="icon-home"></i> {% trans "Return to site" %}</a></li>
                     <li><a href="{% url 'customer:summary' %}"><i class="icon-user"></i> {% trans "Account" %}</a></li>
                     <li><a href="{% url 'dashboard:logout' %}"><i class="icon-signout"></i> {% trans "Log out" %}</a></li>
