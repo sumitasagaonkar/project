@@ -164,9 +164,9 @@ OSCAR_ORDER_STATUS_PIPELINE = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'base',
-        'USER': 'ram',
-        'PASSWORD': 'asagaonkar',
+        'NAME': 'store',
+        'USER': 'amit',
+        'PASSWORD': 'mani',
         'HOST': 'localhost',
         'PORT': '',
     }
