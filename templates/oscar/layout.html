@@ -2,6 +2,64 @@
 {% load static %}
 
 {% block styles %}
+
+
+    <style type="text/css">
+        #slider {
+            overflow: hidden;
+        }
+    #slider figure {
+        position: relative;
+        width: 500%;
+        min-height: 50px;
+        margin: 0;
+        left: 0;
+        animation: 20s slider infinite;
+
+
+    }
+    #slider figure img {
+        width: 20%;
+        height: 20%;
+        float: left;
+    }
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+        20% {
+            left: 0;
+        }
+        25% {
+            left: -100%;
+        }
+        45% {
+            left: -100%;
+        }
+        70% {
+            left: -200%;
+        }
+        75% {
+            left: -300%;
+        }
+        95% {
+            left: -300%;
+        }
+        100% {
+            left: -400%; 
+        }
+    }
+
+    </style>
+
+
+
+
+
+
+
+
+
     {% comment %}
         If you are developing Oscar's CSS, or overriding Oscar's CSS
         files in your project, then set OSCAR_USE_LESS = True in your
@@ -33,6 +91,57 @@
     </header>
 
     {# Main content of page - other layout templates may override this block #}
+
+
+
+
+        <header class="header container-fluid">
+            <div id="slider">
+                <figure>
+                    <img src="{% static 'photoss/man.png' %}">
+                    <img src="{% static 'photoss/one.png' %}">
+                    <img src="{% static 'photoss/four.png' %}">
+                    <img src="{% static 'photoss/one.png' %}">
+                    <img src="{% static 'photoss/man.png' %}">
+                 </figure>
+            
+            </div>
+        </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {% block content_wrapper %}
         <div class="container-fluid page">
             <div class="page_inner">
