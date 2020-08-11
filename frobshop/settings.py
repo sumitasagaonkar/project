@@ -156,8 +156,6 @@ OSCAR_ORDER_STATUS_PIPELINE = {
 
 
 
-
-# Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 DATABASES = {
     'default': {
@@ -182,8 +180,9 @@ DATABASES = {
         'ATOMIC_REQUESTS': True,
     }
 }
-
 '''
+# Database
+
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
